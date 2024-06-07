@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
-// Hook para crear un endpoint en WordPress
+// Hook para crear un endpoint 
 add_action('rest_api_init', function () {
     register_rest_route('wc-product-info/v1', '/product/(?P<id>\d+)', array(
         'methods' => 'GET',
