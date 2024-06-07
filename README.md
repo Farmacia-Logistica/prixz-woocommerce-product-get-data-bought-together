@@ -14,7 +14,7 @@ El plugin **Prixz WooCommerce Product Get Data** crea un endpoint REST en WordPr
 Para obtener la información de un producto, realiza una solicitud GET a la siguiente URL:
 
 ```bash
-https://tusitio.com/wp-json/wc-product-info/v1/product/[ID]
+https://prixz.com/wp-json/wc-product-info/v1/product/[ID]
 ```
 
 Reemplaza '[ID]' con el ID del producto de WooCommerce que deseas consultar.
