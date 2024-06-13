@@ -1,20 +1,15 @@
-# Prixz WooCommerce Product Get Data
-
-**Plugin Name:** Prixz WooCommerce Product Get Data  
-**Description:** Plugin para obtener información de un producto de WooCommerce en formato JSON.  
-**Version:** 1.0  
-**Author:** Woo Team
+# Prixz WooCommerce Product Get Data Bought Together
 
 ## Descripción
 
-El plugin **Prixz WooCommerce Product Get Data** crea un endpoint REST en WordPress que permite obtener información de un producto de WooCommerce utilizando una solicitud GET. El plugin realiza una autenticación para obtener un token y usa este token para recuperar la información del producto.
+El plugin **Prixz WooCommerce Product Get Data** crea un endpoint REST en WordPress que permite obtener información de los prductos que se compran conjuntamente a un producto de WooCommerce actual en single product, utilizando una solicitud GET. El plugin realiza una autenticación para obtener un token y usa este token para recuperar la información del producto.
 
 ## Uso
 
 Para obtener la información de un producto, realiza una solicitud GET a la siguiente URL:
 
 ```bash
-https://prixz.com/wp-json/wc-product-info/v1/product/[ID]
+https://prixz.com/wp-json/wc-product-info-bought-together/v1/product/[ID]
 ```
 
 Reemplaza '[ID]' con el ID del producto de WooCommerce que deseas consultar.

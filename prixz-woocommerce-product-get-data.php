@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Prixz WooCommerce Product Get Data
- * Description: Plugin para obtener información de un producto de WooCommerce en formato JSON.
+ * Plugin Name: Prixz WooCommerce Product Get Data Bought Together
+ * Description: Plugin para obtener información de los productos que se compran conjuntamente al producto actual en single-product en WooCommerce en formato JSON.
  * Version: 1.0
- * Author: Woo Team
+ * Author: Woo Prixz Team
  */
 
 if (!defined('ABSPATH')) {
@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
 
 // Hook para crear un endpoint 
 add_action('rest_api_init', function () {
-    register_rest_route('wc-product-info/v1', '/product/(?P<id>\d+)', array(
+    register_rest_route('wc-product-info-bought-together/v1', '/product/(?P<id>\d+)', array(
         'methods' => 'GET',
         'callback' => 'get_product_info',
     ));
