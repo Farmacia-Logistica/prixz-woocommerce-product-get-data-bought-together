@@ -15,6 +15,7 @@ add_action('rest_api_init', function () {
     register_rest_route('wc-product-info-bought-together/v1', '/product/(?P<id>\d+)', array(
         'methods' => 'GET',
         'callback' => 'get_product_info',
+        'permission_callback' => '__return_true', 
     ));
 });
 
